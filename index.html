@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mikhaela Amparo | Virtual Assistant & Healthcare Support Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-ma">MA</span>
+        <span class="logo-text">Mikhaela Amparo</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#cover">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#samples">Work Samples</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== COVER SECTION ===================== -->
+  <section class="cover-section" id="cover">
+    <div class="cover-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="cover-content">
+      <div class="cover-left">
+        <div class="cover-badge">
+          <i class="fas fa-heartbeat"></i> Healthcare VA Specialist
+        </div>
+        <h1 class="cover-name">MIKHAELA<br/><span>AMPARO</span></h1>
+        <h2 class="cover-title">Virtual Assistant | Healthcare Support Specialist</h2>
+        <p class="cover-subtitle">Detail-Oriented &nbsp;·&nbsp; Patient-Focused &nbsp;·&nbsp; Data & Admin Expert</p>
+        <div class="cover-info">
+          <span><i class="fas fa-map-marker-alt"></i> Cavite, Philippines</span>
+          <span><i class="fas fa-envelope"></i> amparo.mikhaela@gmail.com</span>
+          <span><i class="fas fa-phone"></i> 0965 321 1881</span>
+          <span>
+            <a href="https://www.linkedin.com/in/amparomikhaela" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i> amparomikhaela
+            </a>
+          </span>
+        </div>
+        <div class="cover-cta">
+          <a href="#contact" class="btn-primary">Hire Me Now</a>
+          <a href="#samples" class="btn-outline">View My Work</a>
+        </div>
+      </div>
+
+      <!-- EDITABLE PHOTO PLACEHOLDER — RIGHT MIDDLE -->
+      <div class="cover-photo-wrap">
+        <div class="photo-placeholder cover-photo" id="coverPhotoWrap" onclick="triggerUpload('coverPhoto')">
+          <div class="photo-inner">
+            <input type="file" id="coverPhoto" accept="image/*" class="photo-input" onchange="previewPhoto(this, 'coverPhotoWrap')"/>
+            <div class="photo-icon-group">
+              <div class="photo-circle-bg">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="photo-upload-hint">
+                <i class="fas fa-camera"></i>
+                <span>Click to Upload Photo</span>
+                <small>Full-body photo recommended</small>
+              </div>
+            </div>
+          </div>
+          <img class="uploaded-img" id="coverPhotoImg" src="" alt="Mikhaela Amparo"/>
+        </div>
+        <div class="photo-decor-ring"></div>
+        <div class="photo-decor-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ME ===================== -->
+  <section class="about-section section" id="about">
+    <div class="container about-grid">
+
+      <!-- EDITABLE PHOTO PLACEHOLDER — LEFT MIDDLE -->
+      <div class="about-photo-wrap">
+        <div class="photo-placeholder about-photo" id="aboutPhotoWrap" onclick="triggerUpload('aboutPhoto')">
+          <div class="photo-inner">
+            <input type="file" id="aboutPhoto" accept="image/*" class="photo-input" onchange="previewPhoto(this, 'aboutPhotoWrap')"/>
+            <div class="photo-icon-group">
+              <div class="photo-circle-bg">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="photo-upload-hint">
+                <i class="fas fa-camera"></i>
+                <span>Click to Upload Photo</span>
+                <small>Close-up photo recommended</small>
+              </div>
+            </div>
+          </div>
+          <img class="uploaded-img" id="aboutPhotoImg" src="" alt="Mikhaela Amparo"/>
+        </div>
+        <div class="about-photo-badge">
+          <i class="fas fa-award"></i> 3+ Yrs Experience
+        </div>
+        <div class="about-photo-stat">
+          <span>BS Medical Technology</span>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="section-label"><i class="fas fa-user-circle"></i> Who I Am</div>
+        <h2 class="section-title">About Me</h2>
+        <div class="about-divider"></div>
+        <p class="about-text">
+          I am a <strong>detail-oriented Medical Assistant</strong> and aspiring <strong>Virtual Assistant</strong> with hands-on experience in healthcare operations, patient coordination, and administrative support.
+        </p>
+        <p class="about-text">
+          With a strong background in laboratory services and data management, I bring <strong>accuracy, efficiency, and professionalism</strong> to every task. I specialize in handling sensitive information, managing schedules, and supporting high-volume workflows—making me a reliable remote support partner for healthcare providers and businesses.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <i class="fas fa-shield-alt"></i>
+            <span>Confidential & Trustworthy</span>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-clock"></i>
+            <span>Efficient & Timely</span>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-check-double"></i>
+            <span>Detail-Oriented</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary">Let's Connect</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services-section section" id="services">
+    <div class="container">
+      <div class="section-label center"><i class="fas fa-briefcase"></i> What I Do</div>
+      <h2 class="section-title center">Services I Offer</h2>
+      <div class="section-divider"></div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-delay="0">
+          <div class="service-icon"><i class="fas fa-stethoscope"></i></div>
+          <h3>Medical Virtual Assistance</h3>
+          <p>Remote administrative support tailored for healthcare providers and clinics.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-delay="100">
+          <div class="service-icon"><i class="fas fa-table"></i></div>
+          <h3>Data Entry & Record Management</h3>
+          <p>Accurate encoding, organizing, and maintaining digital health records and databases.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-delay="200">
+          <div class="service-icon"><i class="fas fa-calendar-check"></i></div>
+          <h3>Patient Scheduling & Coordination</h3>
+          <p>Efficient appointment booking, reminders, and coordination between patients and providers.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-delay="300">
+          <div class="service-icon"><i class="fas fa-envelope-open-text"></i></div>
+          <h3>Email & Calendar Management</h3>
+          <p>Inbox organization, timely responses, and calendar scheduling for busy professionals.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-delay="400">
+          <div class="service-icon"><i class="fas fa-folder-open"></i></div>
+          <h3>File Organization</h3>
+          <p>Google Drive, Dropbox — structured, labeled, and easy-to-retrieve file systems.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-delay="500">
+          <div class="service-icon"><i class="fas fa-search"></i></div>
+          <h3>Online Research & Admin Support</h3>
+          <p>In-depth research, data compilation, and general administrative assistance.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-delay="600">
+          <div class="service-icon"><i class="fas fa-vials"></i></div>
+          <h3>Laboratory Data Encoding</h3>
+          <p>Specialized documentation and encoding for laboratory and diagnostic services.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-delay="700">
+          <div class="service-icon"><i class="fas fa-headset"></i></div>
+          <h3>Customer Support / Client Communication</h3>
+          <p>Professional, empathetic client interactions via email, chat, or phone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TOOLS ===================== -->
+  <section class="tools-section section" id="tools">
+    <div class="container">
+      <div class="section-label center"><i class="fas fa-tools"></i> My Toolkit</div>
+      <h2 class="section-title center">Tools I Use</h2>
+      <div class="section-divider"></div>
+      <div class="tools-grid">
+        <div class="tools-category">
+          <div class="tools-cat-header"><i class="fas fa-laptop"></i> Productivity</div>
+          <ul class="tools-list">
+            <li><i class="fab fa-microsoft"></i> Microsoft Word</li>
+            <li><i class="fas fa-file-excel"></i> Microsoft Excel</li>
+            <li><i class="fas fa-file-powerpoint"></i> Microsoft PowerPoint</li>
+            <li><i class="fab fa-google"></i> Google Docs</li>
+            <li><i class="fas fa-table"></i> Google Sheets</li>
+          </ul>
+        </div>
+        <div class="tools-category">
+          <div class="tools-cat-header"><i class="fas fa-comments"></i> Communication</div>
+          <ul class="tools-list">
+            <li><i class="fas fa-envelope"></i> Gmail</li>
+            <li><i class="fas fa-video"></i> Zoom</li>
+            <li><i class="fab fa-google"></i> Google Meet</li>
+          </ul>
+        </div>
+        <div class="tools-category">
+          <div class="tools-cat-header"><i class="fas fa-archive"></i> File Management</div>
+          <ul class="tools-list">
+            <li><i class="fab fa-google-drive"></i> Google Drive</li>
+            <li><i class="fab fa-dropbox"></i> Dropbox</li>
+          </ul>
+        </div>
+        <div class="tools-category">
+          <div class="tools-cat-header"><i class="fas fa-flask"></i> Systems</div>
+          <ul class="tools-list">
+            <li><i class="fas fa-hospital-alt"></i> Laboratory Information System (LIS)</li>
+          </ul>
+        </div>
+        <div class="tools-category">
+          <div class="tools-cat-header"><i class="fas fa-paint-brush"></i> Others</div>
+          <ul class="tools-list">
+            <li><i class="fas fa-palette"></i> Canva (Basic Design)</li>
+            <li><i class="fas fa-globe"></i> Internet Research Tools</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="skills-section section" id="skills">
+    <div class="container">
+      <div class="section-label center"><i class="fas fa-star"></i> My Strengths</div>
+      <h2 class="section-title center">Core Skills</h2>
+      <div class="section-divider"></div>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Patient Care & Client Support</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fas fa-keyboard"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Data Entry & Accuracy</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Administrative Assistance</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fas fa-clock"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Time Management & Multitasking</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fas fa-comments"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Communication Skills</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="93"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fas fa-lock"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Confidentiality & Data Privacy</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="97"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Workflow Organization</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="91"></div></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon"><i class="fas fa-eye"></i></div>
+          <div class="skill-info">
+            <span class="skill-name">Attention to Detail</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="96"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="experience-section section" id="experience">
+    <div class="container">
+      <div class="section-label center"><i class="fas fa-briefcase"></i> Career Path</div>
+      <h2 class="section-title center">Professional Experience</h2>
+      <div class="section-divider"></div>
+      <div class="timeline">
+
+        <div class="timeline-item active">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-badge current">Current</span>
+              <span class="timeline-date">2025 – Present</span>
+            </div>
+            <h3 class="timeline-role">Phlebotomist / Lab Aide / Specimen Collector</h3>
+            <h4 class="timeline-company"><i class="fas fa-hospital"></i> Multilab Diagnostic & Health Services</h4>
+            <ul class="timeline-duties">
+              <li>Managed and encoded client data with high accuracy</li>
+              <li>Scheduled appointments and coordinated home services</li>
+              <li>Organized digital records and maintained documentation</li>
+              <li>Supported daily operations and improved workflow efficiency</li>
+            </ul>
+            <div class="timeline-va-tag">
+              <i class="fas fa-laptop-house"></i> VA Relevance: Scheduling, Data Entry, Admin Support
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-date">2024 – 2025</span>
+            </div>
+            <h3 class="timeline-role">Medical Laboratory Technician</h3>
+            <h4 class="timeline-company"><i class="fas fa-hospital"></i> City of Imus Doctors Hospital</h4>
+            <ul class="timeline-duties">
+              <li>Maintained and organized patient records using LIS</li>
+              <li>Generated reports and tracked inventory</li>
+              <li>Collaborated with healthcare teams for efficient workflows</li>
+            </ul>
+            <div class="timeline-va-tag">
+              <i class="fas fa-laptop-house"></i> VA Relevance: Data Management, Reporting, Organization
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-date">2023 – 2024</span>
+            </div>
+            <h3 class="timeline-role">Phlebotomist</h3>
+            <h4 class="timeline-company"><i class="fas fa-hospital"></i> Wellcare Clinics & Laboratory</h4>
+            <ul class="timeline-duties">
+              <li>Managed patient records and documentation</li>
+              <li>Ensured smooth coordination of specimen tracking</li>
+              <li>Delivered excellent client communication</li>
+            </ul>
+            <div class="timeline-va-tag">
+              <i class="fas fa-laptop-house"></i> VA Relevance: Customer Support, Documentation
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS ===================== -->
+  <section class="achievements-section section" id="achievements">
+    <div class="container">
+      <div class="section-label center"><i class="fas fa-trophy"></i> My Impact</div>
+      <h2 class="section-title center">Key Impact Highlights</h2>
+      <div class="section-divider"></div>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-chart-line"></i></div>
+          <p>Improved data accuracy and reduced documentation errors</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-users"></i></div>
+          <p>Supported high-volume patient operations efficiently</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-folder-open"></i></div>
+          <p>Maintained organized and accessible records</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-shield-alt"></i></div>
+          <p>Ensured compliance with healthcare protocols</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-hand-holding-medical"></i></div>
+          <p>Delivered reliable administrative and clinical support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="education-section section" id="education">
+    <div class="container">
+      <div class="section-label center"><i class="fas fa-graduation-cap"></i> My Background</div>
+      <h2 class="section-title center">Education & Training</h2>
+      <div class="section-divider"></div>
+      <div class="education-grid">
+        <div class="edu-card main-edu">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-info">
+            <h3>Bachelor of Science in Medical Technology</h3>
+            <h4><i class="fas fa-university"></i> Cavite State University</h4>
+            <span class="edu-year">Graduated 2023</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+          <div class="edu-info">
+            <h3>Authorized Specimen Collector Training</h3>
+            <h4><i class="fas fa-award"></i> Professional Certification</h4>
+            <span class="edu-year">2025</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-hospital-alt"></i></div>
+          <div class="edu-info">
+            <h3>Clinical Internship</h3>
+            <h4><i class="fas fa-map-marker-alt"></i> Dasmariñas City Medical Center</h4>
+            <span class="edu-year">Internship</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-hospital-alt"></i></div>
+          <div class="edu-info">
+            <h3>Clinical Internship</h3>
+            <h4><i class="fas fa-map-marker-alt"></i> Emilio Aguinaldo College Medical Center</h4>
+            <span class="edu-year">Internship</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SAMPLE WORK ===================== -->
+  <section class="samples-section section" id="samples">
+    <div class="container">
+      <div class="section-label center"><i class="fas fa-laptop-code"></i> Portfolio</div>
+      <h2 class="section-title center">Sample Tasks I Can Do</h2>
+      <div class="section-divider"></div>
+
+      <div class="samples-tabs">
+        <button class="tab-btn active" data-tab="spreadsheet"><i class="fas fa-table"></i> Data Entry</button>
+        <button class="tab-btn" data-tab="calendar"><i class="fas fa-calendar-alt"></i> Scheduling</button>
+        <button class="tab-btn" data-tab="drive"><i class="fab fa-google-drive"></i> File Org.</button>
+        <button class="tab-btn" data-tab="email"><i class="fas fa-envelope"></i> Email Mgmt</button>
+        <button class="tab-btn" data-tab="canva"><i class="fas fa-paint-brush"></i> Canva</button>
+      </div>
+
+      <!-- MOCK 1: DATA ENTRY SPREADSHEET -->
+      <div class="tab-content active" id="tab-spreadsheet">
+        <div class="mock-container spreadsheet-mock">
+          <div class="mock-header">
+            <div class="mock-title-row">
+              <span class="mock-app-icon excel-icon"><i class="fas fa-file-excel"></i></span>
+              <span class="mock-app-name">Data Entry Sample — Patient Records</span>
+            </div>
+            <div class="mock-toolbar">
+              <span class="toolbar-dot red"></span>
+              <span class="toolbar-dot yellow"></span>
+              <span class="toolbar-dot green"></span>
+            </div>
+          </div>
+          <div class="spreadsheet-wrap">
+            <table class="spreadsheet-table">
+              <thead>
+                <tr>
+                  <th>Patient Name</th>
+                  <th>Date</th>
+                  <th>Service</th>
+                  <th>Status</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><i class="fas fa-user-circle row-icon"></i> Juan Dela Cruz</td>
+                  <td>May 12</td>
+                  <td>Blood Test</td>
+                  <td><span class="status-badge completed">Completed</span></td>
+                  <td>Normal</td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-user-circle row-icon"></i> Maria Santos</td>
+                  <td>May 13</td>
+                  <td>Urinalysis</td>
+                  <td><span class="status-badge pending">Pending</span></td>
+                  <td>Follow-up</td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-user-circle row-icon"></i> Pedro Reyes</td>
+                  <td>May 14</td>
+                  <td>CBC</td>
+                  <td><span class="status-badge completed">Completed</span></td>
+                  <td>Sent to doctor</td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-user-circle row-icon"></i> Ana Garcia</td>
+                  <td>May 15</td>
+                  <td>Lipid Panel</td>
+                  <td><span class="status-badge inprogress">In Progress</span></td>
+                  <td>Awaiting results</td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-user-circle row-icon"></i> Carlo Mendoza</td>
+                  <td>May 16</td>
+                  <td>X-Ray</td>
+                  <td><span class="status-badge completed">Completed</span></td>
+                  <td>Report filed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mock-footer">
+            <span><i class="fas fa-lock"></i> Secure & Confidential</span>
+            <span><i class="fas fa-check-circle"></i> 100% Accuracy Rate</span>
+            <span><i class="fas fa-sync-alt"></i> Real-time Updates</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOCK 2: CALENDAR MANAGEMENT -->
+      <div class="tab-content" id="tab-calendar">
+        <div class="mock-container calendar-mock">
+          <div class="mock-header">
+            <div class="mock-title-row">
+              <span class="mock-app-icon cal-icon"><i class="fas fa-calendar-alt"></i></span>
+              <span class="mock-app-name">Appointment Scheduling — Weekly View</span>
+            </div>
+            <div class="mock-toolbar">
+              <span class="toolbar-dot red"></span>
+              <span class="toolbar-dot yellow"></span>
+              <span class="toolbar-dot green"></span>
+            </div>
+          </div>
+          <div class="calendar-legend">
+            <span class="legend-item blue">Admin Tasks</span>
+            <span class="legend-item green">Patient Tasks</span>
+            <span class="legend-item purple">Reports</span>
+          </div>
+          <div class="calendar-grid">
+            <div class="cal-day">
+              <div class="cal-day-header">Monday</div>
+              <div class="cal-event patient">
+                <span class="cal-time">9:00 AM</span>
+                <span class="cal-task">Patient Call</span>
+              </div>
+              <div class="cal-event admin">
+                <span class="cal-time">11:00 AM</span>
+                <span class="cal-task">Data Encoding</span>
+              </div>
+              <div class="cal-event report">
+                <span class="cal-time">3:00 PM</span>
+                <span class="cal-task">Weekly Report</span>
+              </div>
+            </div>
+            <div class="cal-day">
+              <div class="cal-day-header">Tuesday</div>
+              <div class="cal-event admin">
+                <span class="cal-time">10:00 AM</span>
+                <span class="cal-task">Lab Coordination</span>
+              </div>
+              <div class="cal-event admin">
+                <span class="cal-time">2:00 PM</span>
+                <span class="cal-task">Email Follow-ups</span>
+              </div>
+            </div>
+            <div class="cal-day">
+              <div class="cal-day-header">Wednesday</div>
+              <div class="cal-event patient">
+                <span class="cal-time">9:30 AM</span>
+                <span class="cal-task">Appointment Booking</span>
+              </div>
+              <div class="cal-event report">
+                <span class="cal-time">1:00 PM</span>
+                <span class="cal-task">Data Filing</span>
+              </div>
+            </div>
+            <div class="cal-day">
+              <div class="cal-day-header">Thursday</div>
+              <div class="cal-event patient">
+                <span class="cal-time">8:00 AM</span>
+                <span class="cal-task">Patient Reminders</span>
+              </div>
+              <div class="cal-event admin">
+                <span class="cal-time">11:30 AM</span>
+                <span class="cal-task">Record Update</span>
+              </div>
+            </div>
+            <div class="cal-day">
+              <div class="cal-day-header">Friday</div>
+              <div class="cal-event report">
+                <span class="cal-time">9:00 AM</span>
+                <span class="cal-task">Monthly Summary</span>
+              </div>
+              <div class="cal-event admin">
+                <span class="cal-time">3:00 PM</span>
+                <span class="cal-task">Calendar Review</span>
+              </div>
+            </div>
+          </div>
+          <div class="mock-footer">
+            <span><i class="fas fa-calendar-check"></i> Zero Missed Appointments</span>
+            <span><i class="fas fa-bell"></i> Automated Reminders</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOCK 3: GOOGLE DRIVE ORGANIZATION -->
+      <div class="tab-content" id="tab-drive">
+        <div class="mock-container drive-mock">
+          <div class="mock-header">
+            <div class="mock-title-row">
+              <span class="mock-app-icon drive-icon"><i class="fab fa-google-drive"></i></span>
+              <span class="mock-app-name">File Organization — Google Drive</span>
+            </div>
+            <div class="mock-toolbar">
+              <span class="toolbar-dot red"></span>
+              <span class="toolbar-dot yellow"></span>
+              <span class="toolbar-dot green"></span>
+            </div>
+          </div>
+          <div class="drive-search">
+            <i class="fas fa-search"></i>
+            <span>Search in Drive</span>
+          </div>
+          <div class="drive-grid">
+            <div class="drive-folder">
+              <div class="folder-icon pink"><i class="fas fa-folder"></i></div>
+              <span class="folder-name">Client Records</span>
+              <span class="folder-count">24 files</span>
+            </div>
+            <div class="drive-folder">
+              <div class="folder-icon brown"><i class="fas fa-folder"></i></div>
+              <span class="folder-name">Lab Reports</span>
+              <span class="folder-count">18 files</span>
+            </div>
+            <div class="drive-folder">
+              <div class="folder-icon blue"><i class="fas fa-folder"></i></div>
+              <span class="folder-name">Appointments</span>
+              <span class="folder-count">12 files</span>
+            </div>
+            <div class="drive-folder">
+              <div class="folder-icon green"><i class="fas fa-folder"></i></div>
+              <span class="folder-name">Billing & Invoices</span>
+              <span class="folder-count">9 files</span>
+            </div>
+            <div class="drive-folder">
+              <div class="folder-icon purple"><i class="fas fa-folder"></i></div>
+              <span class="folder-name">Weekly Reports</span>
+              <span class="folder-count">6 files</span>
+            </div>
+            <div class="drive-folder">
+              <div class="folder-icon orange"><i class="fas fa-folder"></i></div>
+              <span class="folder-name">Templates</span>
+              <span class="folder-count">8 files</span>
+            </div>
+          </div>
+          <p class="drive-tagline"><i class="fas fa-info-circle"></i> Organized, labeled, and easy retrieval system</p>
+          <div class="mock-footer">
+            <span><i class="fas fa-sort-alpha-down"></i> Properly Labeled</span>
+            <span><i class="fas fa-share-alt"></i> Easy Sharing</span>
+            <span><i class="fas fa-search"></i> Fast Retrieval</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOCK 4: EMAIL MANAGEMENT -->
+      <div class="tab-content" id="tab-email">
+        <div class="mock-container email-mock">
+          <div class="mock-header">
+            <div class="mock-title-row">
+              <span class="mock-app-icon gmail-icon"><i class="fas fa-envelope"></i></span>
+              <span class="mock-app-name">Email Handling — Inbox Management</span>
+            </div>
+            <div class="mock-toolbar">
+              <span class="toolbar-dot red"></span>
+              <span class="toolbar-dot yellow"></span>
+              <span class="toolbar-dot green"></span>
+            </div>
+          </div>
+          <div class="email-ui">
+            <div class="email-sidebar">
+              <div class="email-sidebar-item active"><i class="fas fa-inbox"></i> Inbox <span class="badge">3</span></div>
+              <div class="email-sidebar-item"><i class="fas fa-star"></i> Starred</div>
+              <div class="email-sidebar-item"><i class="fas fa-paper-plane"></i> Sent</div>
+              <div class="email-sidebar-item"><i class="fas fa-archive"></i> Archive</div>
+              <div class="email-sidebar-item"><i class="fas fa-trash"></i> Trash</div>
+            </div>
+            <div class="email-list">
+              <div class="email-item email-done">
+                <div class="email-avatar pink">A</div>
+                <div class="email-details">
+                  <span class="email-sender">Dr. Reyes</span>
+                  <span class="email-subject">Appointment Confirmation</span>
+                  <span class="email-preview">Confirmed for May 20 at 10am...</span>
+                </div>
+                <span class="email-tag done">Completed</span>
+                <span class="email-time">10:22 AM</span>
+              </div>
+              <div class="email-item email-pending">
+                <div class="email-avatar brown">S</div>
+                <div class="email-details">
+                  <span class="email-sender">Santos Clinic</span>
+                  <span class="email-subject">Lab Results Follow-up</span>
+                  <span class="email-preview">Awaiting CBC results for patient...</span>
+                </div>
+                <span class="email-tag pending">Pending</span>
+                <span class="email-time">9:15 AM</span>
+              </div>
+              <div class="email-item email-replied">
+                <div class="email-avatar blue">N</div>
+                <div class="email-details">
+                  <span class="email-sender">New Client - Nora</span>
+                  <span class="email-subject">New Client Inquiry</span>
+                  <span class="email-preview">Hi, I'd like to inquire about your VA...</span>
+                </div>
+                <span class="email-tag replied">Replied</span>
+                <span class="email-time">8:40 AM</span>
+              </div>
+              <div class="email-item email-done">
+                <div class="email-avatar green">M</div>
+                <div class="email-details">
+                  <span class="email-sender">Medical Assoc.</span>
+                  <span class="email-subject">Schedule Update</span>
+                  <span class="email-preview">Calendar updated for next week...</span>
+                </div>
+                <span class="email-tag done">Completed</span>
+                <span class="email-time">Yesterday</span>
+              </div>
+            </div>
+          </div>
+          <div class="mock-footer">
+            <span><i class="fas fa-bolt"></i> Fast Response Time</span>
+            <span><i class="fas fa-filter"></i> Organized Inbox</span>
+            <span><i class="fas fa-check-circle"></i> No Missed Emails</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOCK 5: CANVA GRAPHIC -->
+      <div class="tab-content" id="tab-canva">
+        <div class="mock-container canva-mock">
+          <div class="mock-header">
+            <div class="mock-title-row">
+              <span class="mock-app-icon canva-icon"><i class="fas fa-paint-brush"></i></span>
+              <span class="mock-app-name">Canva Graphic Sample</span>
+            </div>
+            <div class="mock-toolbar">
+              <span class="toolbar-dot red"></span>
+              <span class="toolbar-dot yellow"></span>
+              <span class="toolbar-dot green"></span>
+            </div>
+          </div>
+          <div class="canva-preview">
+            <div class="canva-card">
+              <div class="canva-top-bar"></div>
+              <div class="canva-icon-area">
+                <div class="canva-circle">
+                  <i class="fas fa-tint"></i>
+                </div>
+              </div>
+              <div class="canva-brand">Health Reminder</div>
+              <h2 class="canva-headline">Stay Hydrated 💧</h2>
+              <p class="canva-body">Drink at least <strong>8 glasses</strong> of water daily for optimal health and energy.</p>
+              <div class="canva-icons-row">
+                <i class="fas fa-heartbeat"></i>
+                <i class="fas fa-tint"></i>
+                <i class="fas fa-leaf"></i>
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="canva-footer-tag">Mikhaela Amparo · VA Healthcare Specialist</div>
+              <div class="canva-bottom-bar"></div>
+            </div>
+          </div>
+          <div class="mock-footer">
+            <span><i class="fas fa-palette"></i> Clean & Professional Design</span>
+            <span><i class="fas fa-mobile-alt"></i> Social Media Ready</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact-section section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-content">
+        <div class="section-label"><i class="fas fa-paper-plane"></i> Get In Touch</div>
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="about-divider"></div>
+        <p class="contact-tagline">"I'm ready to help streamline your workflow and support your business remotely."</p>
+        <div class="contact-info-list">
+          <a href="mailto:amparo.mikhaela@gmail.com" class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-info-label">Email</span>
+              <span class="contact-info-value">amparo.mikhaela@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:09653211881" class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <span class="contact-info-label">Phone / WhatsApp</span>
+              <span class="contact-info-value">0965 321 1881</span>
+            </div>
+          </a>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span class="contact-info-label">Location</span>
+              <span class="contact-info-value">Cavite, Philippines</span>
+            </div>
+          </div>
+          <a href="https://www.linkedin.com/in/amparomikhaela" target="_blank" rel="noopener" class="contact-info-item">
+            <div class="contact-info-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <span class="contact-info-label">LinkedIn</span>
+              <span class="contact-info-value">amparomikhaela</span>
+            </div>
+          </a>
+        </div>
+        <div class="contact-cta-btns">
+          <a href="mailto:amparo.mikhaela@gmail.com" class="btn-primary"><i class="fas fa-paper-plane"></i> Send Email</a>
+          <a href="https://www.linkedin.com/in/amparomikhaela" target="_blank" class="btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+
+      <!-- EDITABLE PHOTO PLACEHOLDER — CONTACT SECTION -->
+      <div class="contact-photo-wrap">
+        <div class="photo-placeholder contact-photo" id="contactPhotoWrap" onclick="triggerUpload('contactPhoto')">
+          <div class="photo-inner">
+            <input type="file" id="contactPhoto" accept="image/*" class="photo-input" onchange="previewPhoto(this, 'contactPhotoWrap')"/>
+            <div class="photo-icon-group">
+              <div class="photo-circle-bg">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="photo-upload-hint">
+                <i class="fas fa-camera"></i>
+                <span>Click to Upload Photo</span>
+                <small>Professional photo recommended</small>
+              </div>
+            </div>
+          </div>
+          <img class="uploaded-img" id="contactPhotoImg" src="" alt="Mikhaela Amparo"/>
+        </div>
+        <div class="contact-photo-badge">
+          <i class="fas fa-circle" style="color:#4ade80;font-size:0.6rem;"></i> Available for Work
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-ma">MA</span>
+        <span>Mikhaela Amparo</span>
+      </div>
+      <p class="footer-tagline">Virtual Assistant | Healthcare Support Specialist · Cavite, Philippines</p>
+      <div class="footer-links">
+        <a href="#cover">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#samples">Work Samples</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Mikhaela Amparo. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top -->
+  <button class="scroll-top" id="scrollTop" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
